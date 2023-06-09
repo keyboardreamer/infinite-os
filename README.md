@@ -1,42 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Infinite-os
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+this is an website with a appearance that is similar to an operating system. More will be added later <br/>
+The website is written in vuejs, nuxtjs, tailwindcss and more
 
-## Setup
+---
 
-Make sure to install the dependencies:
+![screenshot](./media/screenshot.png)
 
-```bash
-# yarn
-yarn install
+# Set up 
+The website could be set up locally using the code 
 
-# npm
+```
 npm install
-
-# pnpm
-pnpm install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

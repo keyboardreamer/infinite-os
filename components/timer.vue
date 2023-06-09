@@ -8,13 +8,16 @@
 <script setup>
 import {ref} from 'vue'
 
+//list of days
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+//initializing value
 const hour = ref(0)
 const minute = ref(0)
 const date = ref(0)
 const weekday = ref(0)
 
+//changing value
 function timer(){
     var d = new Date()
     date.value = d.getMonth() + 1 + "-" + d.getDate() + "-" + d.getFullYear()
@@ -27,6 +30,7 @@ function timer(){
     }
 }
 
+//changing the value every second
 setInterval(timer,1000)
 </script>
 

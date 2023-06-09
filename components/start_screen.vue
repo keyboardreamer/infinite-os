@@ -1,8 +1,11 @@
 <template>
   <div class=" h-screen w-screen backdrop-blur-sm bg-white bg-opacity-20 grid -z-10">
     <div class=" self-center object-center justify-center">
+
+      <!--loading animation-->
       <div class=" loader ml-auto mr-auto"></div>
       <br />
+      
       <h1 class=" text-5xl text-center special-text font-sans">L O A D I N G</h1>
     </div>
   </div>

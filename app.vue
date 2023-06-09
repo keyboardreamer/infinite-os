@@ -1,9 +1,10 @@
 <template>
   <div>
-    <start-screen v-if="mode === 'start'" />
+    <start_screen v-if="mode === 'start'" />
     <timer class=" font-thin ml-[40vw] top-20 mx-auto"  v-if="mode === 'operating' && store.components.includes('timer')"/>
     <navbar class=" mb-5 bottom-2 fixed" v-if="mode === 'operating'"/>
-    <commandLine v-if="store.components.includes('cli')"></commandLine>
+    <CommandLineApp v-if="store.components.includes('cli')"></commandLineApp>
+    <musicPlayerApp v-if="store.components.includes('music')"></musicPlayerApp>
   </div>
 </template>
 

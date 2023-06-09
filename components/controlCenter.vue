@@ -1,6 +1,7 @@
 <template>
     <div class=" absolute w-[35vw] bg-white mb-[520px] h-[450px] p-3 rounded-xl bg-opacity-80 backdrop-blur-2xl overflow-scroll-x">
 
+            <!--past activity-->
             <div>
                 <p class=" text-md font-semibold">Rencently used &gt;</p>
                 <div class="flex items-center h-8 mt-2">
@@ -19,7 +20,8 @@
                 </div>
             </div>
 
-            <div>
+            <!--reccomendation feed-->
+            <div class=" mt-5">
                 <p class=" text-md font-semibold mt-2">Feed &gt; </p>
             </div>
     </div>
