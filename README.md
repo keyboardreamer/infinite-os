@@ -5,20 +5,39 @@ The website is written in vuejs, nuxtjs, tailwindcss and more
 
 ---
 
-<<<<<<< HEAD
-![screenshot](./media/screenshot.png)
+Make sure to install the dependencies:
 
-# Set up 
-The website could be set up locally using the code 
+```bash
+# yarn
+yarn install
 
-```
+# npm
 npm install
-```
-=======
-# Set up 
-The website could be set up locally using the code 
 
+# pnpm
+pnpm install
 ```
-npm install
+
+## Development Server
+
+Start the development server on `http://localhost:3000`
+
+```bash
+npm run dev
 ```
->>>>>>> c6de394a8a625956baa6805a6a2bee089524a045
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
