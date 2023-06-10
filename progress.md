@@ -1,0 +1,19 @@
+### The plans
+- **Music player**
+    - [ ] complete user interface
+    - [ ] add functionality
+    - [ ] add custom music - considering(?)
+- **Control center**
+    - [ ] finish user interface
+    - [ ] add interactive feeds
+- **search bar**
+    - [ ] connect to google
+- **Gallery**
+    - [ ] making user inteface
+- **Side control**
+    - [ ] making hover effect
+    - [ ] changing color of button
+- **Browser**
+    - currently no plan
+- **CLI**
+    - update more command in future

@@ -1,7 +1,7 @@
 <template>
-  <div class=" absolute z-30 text-center">
-    <h1 class=" text-8xl text-white text-shadow font-semibold">{{hour}}:{{minute}}</h1>
-    <p class=" text-white text-xl font-normal mt-2">{{ date }}, {{ weekday }}</p>
+  <div class=" absolute z-30 grid w-full justify-center">
+    <h1 class=" text-8xl text-white" id="special-font">{{hour}}:{{minute}}</h1>
+    <p class=" text-white text-xl font-thin mt-2 text-center">{{ date }}, {{ weekday }}</p>
   </div>
 </template>
 
@@ -35,7 +35,9 @@ setInterval(timer,1000)
 </script>
 
 <style>
-.text-shadow{
-    text-shadow: 5px 5px 10px rgba(101, 178, 181, 0.3);
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+#special-font{
+  font-family:"Share Tech Mono", sans-serif
 }
 </style>

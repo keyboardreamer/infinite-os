@@ -1,5 +1,5 @@
 <template>
-     <div class="rounded-md absolute h-36 w-[20vw] bg-white mb-60 nav bg-white bg-opacity-80 backdrop-blur-md p-4">
+     <div class="rounded-md absolute h-36 w-[20vw] bg-white mb-60 nav bg-opacity-80 backdrop-blur-md p-4">
 
         <!--status bar-->
 
