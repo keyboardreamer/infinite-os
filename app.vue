@@ -3,6 +3,7 @@
     <start_screen v-if="mode === 'start'" />
     <timer class=" font-thin top-20 mx-auto"  v-if="mode === 'operating' && store.components.includes('timer')"/>
     <navbar class=" mb-5 bottom-2 fixed" v-if="mode === 'operating'"/>
+    <MusicWidget v-if="store.components.includes('musicWidget')"></MusicWidget>
     <CommandLineApp v-if="store.components.includes('cli')"></commandLineApp>
     <musicPlayerApp v-if="store.components.includes('music')"></musicPlayerApp>
   </div>
@@ -11,6 +12,7 @@
 <script setup>
 import {ref} from 'vue'
 import {useStore} from './stores/db.js'
+import MusicWidget from './components/musicWidget.vue';
 
 //initializing the value
 const store = useStore()

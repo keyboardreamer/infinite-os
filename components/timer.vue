@@ -1,5 +1,5 @@
 <template>
-  <div class=" absolute z-30 grid w-full justify-center">
+  <div class=" absolute z-0 grid w-full justify-center">
     <h1 class=" text-8xl text-white" id="special-font">{{hour}}:{{minute}}</h1>
     <p class=" text-white text-xl font-thin mt-2 text-center">{{ date }}, {{ weekday }}</p>
   </div>

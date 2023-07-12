@@ -9,7 +9,7 @@
                <input class=" h-full px-1 text-black" placeholder="search" />
             </div>
 
-            <!--the control-->
+            <!--the control--->
             <svg class=" mr-4 hover:shadow-xl hover:shadow-white" @click="toggleControl" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/><path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/></svg>
             
             <!--music-->
@@ -26,9 +26,9 @@
         </div>
 
         <!--nav bar on the right-->
-        <div class=" nav bg-white bg-opacity-40 backdrop-blur-md h-12 ml-[15px] w-[10vw] rounded-md flex items-center justify-center hover:bg-slate-100" @click="toggleSide" :class="(showSide === true) ?'bg-slate-100' :'bg-white'">
+        <div class=" nav bg-white bg-opacity-40 backdrop-blur-md h-12 ml-[15px] px-6 rounded-md flex items-center justify-center hover:bg-slate-100" @click="toggleSide" :class="(showSide === true) ?'bg-slate-100' :'bg-white'">
             <SideControl v-if="showSide == true" />
-            <svg class=" mr-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline></svg>
+            <svg class=" mr-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline></svg>
             <svg class=" mr-3" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
         </div>
