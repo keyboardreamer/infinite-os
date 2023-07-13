@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute ml-[25vw] top-10 h-4/5 w-[50vw] bg-gray-800 bg-opacity-90 z-30 p-3 overflow-y-scroll">
+    <div class="w-[75vw] md:w-[50vw] absolute ml-[25vw] top-10 h-4/5 bg-gray-800 bg-opacity-90 z-30 p-3 overflow-y-scroll">
 
         <!--controling the size, closure of the app-->
         <ControlBar component="cli"/>

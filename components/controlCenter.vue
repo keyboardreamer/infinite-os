@@ -1,5 +1,5 @@
 <template>
-    <div class=" absolute w-[35vw] bg-white mb-[520px] h-[450px] p-3 rounded-xl bg-opacity-80 backdrop-blur-2xl overflow-scroll-x">
+    <div class="absolute w-[75vw] md:w-[40vw] bg-white mb-[520px] h-[450px] p-3 rounded-xl bg-opacity-80 backdrop-blur-2xl overflow-scroll-x">
 
             <!--past activity-->
             <div class=" my-2">

@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute ml-[15vw] top-10 h-4/5 w-[70vw] bg-gray-600 rounded-md bg-opacity-90 z-30 p-3">
+    <main class="absolute ml-[15vw] top-10 h-4/5 w-[70vw] bg-gray-600 rounded-md bg-opacity-90 z-30 p-3">
 
         <!--bar for closure-->
         <controlBar component="music" />
@@ -23,7 +23,7 @@
         <div class=" h-20 border-t-4 border-t-white w-[68vw] absolute bottom-0">
 
         </div>
-    </div>
+    </main>
 </template>
 
 <script setup>
