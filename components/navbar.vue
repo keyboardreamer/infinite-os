@@ -1,12 +1,16 @@
 <template>
+<!--nav bar is the big white bar on the bottom-->
+
     <div class=" flex absolute z-30 w-full justify-center">
 
         <!--nav bar on the left-->
         <div class=" bg-white bg-opacity-40 backdrop-blur-md h-12 px-7 rounded-md flex justify-center items-center nav">
             <controlCenter v-if="showControl" />
+
+            <!--the search bar-->
             <div class=" bg-white opacity-40 rounded-md h-8 px-1 mr-4 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-               <input class=" h-full px-1 text-black" placeholder="search" />
+               <input class=" h-full px-1 text-black" placeholder="search" v-model="searchContent" @keypress.enter="search"/>
             </div>
 
             <!--the control--->
@@ -25,7 +29,7 @@
             <svg class=" hover:shadow-xl hover:shadow-white" @click="newPage('cli')" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         </div>
 
-        <!--nav bar on the right-->
+        <!--nav bar on the right, or 'side control'-->
         <div class=" nav bg-white bg-opacity-40 backdrop-blur-md h-12 ml-[15px] px-6 rounded-md flex items-center justify-center hover:bg-slate-100" @click="toggleSide" :class="(showSide === true) ?'bg-slate-100' :'bg-white'">
             <SideControl v-if="showSide == true" />
             <svg class=" mr-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline></svg>
@@ -43,6 +47,7 @@ import {useStore} from '../stores/db.js'
 const store = useStore()
 const showSide = ref(false)
 const showControl = ref(false)
+const searchContent = ref('')
 
 //toggling both parts
 function toggleSide(){
@@ -62,5 +67,9 @@ function newPage(input){
     }
 }
 
+//search function
+function search(){
+    window.location.href = ('https://www.google.com/search?q=' + searchContent.value)
+}
 
 </script>

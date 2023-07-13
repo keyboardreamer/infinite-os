@@ -4,7 +4,7 @@ export const useStore = defineStore('store',{
     state:()=>{
         return {
             mode:'start',
-            components:['timer','musicWidget']
+            components:['timer']
         }
     }
 })

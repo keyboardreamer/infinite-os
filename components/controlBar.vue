@@ -26,5 +26,4 @@ const props = defineProps({component:String,theme:String})
 function removeComponent(){
     store.components = store.components.filter(item => item !== props.component)
 }
-
 </script>

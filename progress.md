@@ -7,7 +7,7 @@
     - [ ] finish user interface
     - [ ] add interactive feeds
 - **search bar**
-    - [ ] connect to google
+    - [x] connect to google
 - **Gallery**
     - [ ] making user inteface
 - **Side control**
