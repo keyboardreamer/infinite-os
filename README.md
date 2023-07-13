@@ -2,7 +2,7 @@
 
 this is an website with a appearance that is similar to an operating system. More will be added later <br/>
 The website is written in vuejs, nuxtjs, tailwindcss and more
-It is now available on [here](infiniteos.netlify.app)
+It is now available on [here](https://infiniteos.netlify.app)
 
 ![the image](/media/screenshot.png)
 
